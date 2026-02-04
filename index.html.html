@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tomatito ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #ffe3e3, #fff7cc);
+        font-family: 'Segoe UI', sans-serif;
+        overflow: hidden;
+    }
+
+    /* ====== GERBERAS ====== */
+    .gerberas {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    .gerbera {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+    }
+
+    .petal {
+        position: absolute;
+        width: 14px;
+        height: 28px;
+        background: #ff7aa2;
+        border-radius: 50%;
+        top: 0;
+        left: 50%;
+        transform-origin: bottom center;
+    }
+
+    .center {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #ffd000;
+        border-radius: 50%;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+    }
+
+    /* Rotaciones de pétalos */
+    .petal:nth-child(1)  { transform: rotate(0deg) translateX(-50%); }
+    .petal:nth-child(2)  { transform: rotate(45deg) translateX(-50%); }
+    .petal:nth-child(3)  { transform: rotate(90deg) translateX(-50%); }
+    .petal:nth-child(4)  { transform: rotate(135deg) translateX(-50%); }
+    .petal:nth-child(5)  { transform: rotate(180deg) translateX(-50%); }
+    .petal:nth-child(6)  { transform: rotate(225deg) translateX(-50%); }
+    .petal:nth-child(7)  { transform: rotate(270deg) translateX(-50%); }
+    .petal:nth-child(8)  { transform: rotate(315deg) translateX(-50%); }
+
+    /* ====== TARJETA ====== */
+    .card {
+        background: #fff;
+        width: 380px;
+        padding: 25px;
+        border-radius: 25px;
+        text-align: center;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 22px;
+        color: #ff4d6d;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    .couple {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin: 20px 0;
+    }
+
+    .person {
+        width: 90px;
+        height: 160px;
+        position: relative;
+    }
+
+    .head {
+        width: 70px;
+        height: 70px;
+        background: #ffccaa;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .body {
+        width: 80px;
+        height: 90px;
+        border-radius: 20px;
+        margin: -5px auto 0;
+    }
+
+    .boy .body {
+        background: #6c9eff;
+    }
+
+    .girl .body {
+        background: #ff8fab;
+    }
+
+    footer {
+        font-size: 14px;
+        color: #777;
+        margin-top: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- GERBERAS FONDO -->
+<div class="gerberas">
+    <!-- Puedes duplicar estas para más flores -->
+    <div class="gerbera" style="top:5%; left:10%;">
+        <div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div>
+        <div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div>
+        <div class="center"></div>
+    </div>
+
+    <div class="gerbera" style="top:20%; left:80%;">
+        <div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div>
+        <div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div>
+        <div class="center"></div>
+    </div>
+
+    <div class="gerbera" style="top:70%; left:15%;">
+        <div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div>
+        <div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div>
+        <div class="center"></div>
+    </div>
+
+    <div class="gerbera" style="top:75%; left:75%;">
+        <div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div>
+        <div class="petal"></div><div class="petal"></div><div class="petal"></div><div class="petal"></div>
+        <div class="center"></div>
+    </div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="card">
+    <h1>
+        El oso que pasarè en el gimnasio sera grande,<br>
+        pero lo hago por ir con usted<br>
+        <strong>tomatito 🍅</strong>
+    </h1>
+
+    <div class="couple">
+        <div class="person boy">
+            <div class="head"></div>
+            <div class="body"></div>
+        </div>
+
+        <div class="person girl">
+            <div class="head"></div>
+            <div class="body"></div>
+        </div>
+    </div>
+
+    <footer>Hecho con amor 💖</footer>
+</div>
+
+</body>
+</html>
